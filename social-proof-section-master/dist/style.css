@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   color: #937b92;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: 'Spartan', sans-serif;
   background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat;
@@ -24,6 +24,12 @@ body {
 @media (min-width: 24em) {
   body {
     background-position: left top, 451px 52px;
+  }
+}
+
+@media (max-width: 24em) {
+  body {
+    background-position: top right, bottom;
   }
 }
 
