@@ -26,7 +26,7 @@ body{
     }
 
     @include breakpoint-down(){
-        background-position: top right, bottom left;
+        background-position: top right, bottom;
     }
 }
 
