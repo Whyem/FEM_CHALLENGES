@@ -1,0 +1,19 @@
+$(document).ready(function(){
+    $("#hamburger").click(function(){
+        $(".header").toggleClass("open");
+        $("body").toggleClass("noscroll");
+        
+        if($(".overlay").hasClass("fade-in")){
+            $(".overlay").removeClass("fade-in");
+            $(".overlay").addClass("fade-out");
+            $(".has-fade").removeClass("fade-in");
+            $(".has-fade").addClass("fade-out");
+        }
+        else{
+            $(".overlay").removeClass("fade-out");
+            $(".overlay").addClass("fade-in");
+            $(".has-fade").removeClass("fade-out");
+            $(".has-fade").addClass("fade-in");  
+        }
+    });
+}); 

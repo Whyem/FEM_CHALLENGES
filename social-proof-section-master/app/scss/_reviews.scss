@@ -1,0 +1,50 @@
+
+.review{
+    background-color: $lightGrayishMagenta;
+    border-radius: 8px;
+    padding: 1.1875rem 1.9375rem;
+    font-weight: 700;
+    color: $veryDarkMagenta;
+
+    &:not(:last-child){
+        margin-bottom: 1rem;
+    }
+
+    @include breakpoint-down(){
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    @include breakpoint-up(){
+        &:first-child{
+            margin-right: 6rem; 
+        }
+    
+        &:last-child{
+            margin-left: 6rem; 
+        }
+    
+        &:nth-child(2){
+            margin-right: 3rem;
+            margin-left: 3rem;
+        }
+    }
+}
+
+.stars{
+
+    margin-bottom: 0.875rem;
+    
+    @include breakpoint-up(){
+        margin-right: 2.0625rem;
+        margin-bottom: 0;
+    }
+
+    >img{
+        &:not(:last-child){
+            margin-right: 0.5rem;
+        }
+        
+    }
+}
