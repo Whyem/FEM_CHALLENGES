@@ -15,7 +15,7 @@ body{
     font-weight: 400;
     color: $darkGrayishMagenta;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Spartan', sans-serif;
     background-image: url(/images/bg-pattern-top-desktop.svg) , url(/images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat;
